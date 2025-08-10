@@ -1,5 +1,98 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: 'IBM Plex mono', Arial, sans-serif;
+  background-image: var(--page-bg-image);
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000028;/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+.header {
+  width:100%;
+  min-height: 668px;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto;
+}
+
+.rec {
+  position: absolute;
+  justify-self: end;
+  margin-block-start: 10px;
+margin-inline-end: 38px;
+color: var(--color-neon);
+text-transform: uppercase;
+font-size: 18px;
+line-height: 25px;
+}
+
+.rec::after{
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--color-neon);
+  border-right: 1px solid var(--color-neon);
+  position: absolute;
+   margin-left: 3px;
+}
+
+.rec::before {
+  position: absolute;
+   content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-color: var(--color-neon);
+  border-radius: 50%;
+ top:9px;
+ margin-left: 100%;
+ left: 9px;
+ box-shadow:0 0 4px 2px rgb(var(--color-neon-rgba));
+}
+
+.decorated-zone {
+  
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+justify-self: end;
+align-self:start;
+margin-block-start: 75px;
+margin-inline-end: 10px;
+gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  width: 100%;
+  border:1px solid transparent;
+  color:var(--color-neon);
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: lowercase;
+  min-width:70px;
+  min-height: 26px;
+  outline: none;
+}
+
+
+.header__theme-menu-button:hover {
+  border-color: rgba(var(--color-neon-rgba), 0.4);
+  
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--color-neon);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--color-neon);
+}
+
+.header__theme-menu-button_active {
+border-color: var(--color-neon) !important;
 }
