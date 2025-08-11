@@ -3,7 +3,9 @@
 .page {
   font-family: 'IBM Plex mono', Arial, sans-serif;
   background-image: var(--page-bg-image);
-  background-position: center;
+  background-position:center;
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #000028;/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
@@ -127,3 +129,42 @@ font-weight: 700;
   background-color: var(--color-neon);
   color: var(--color-title-decor);
 }
+
+.content {
+  padding: 0px 10px 0px;
+}
+
+.content__section {
+  margin-top: 40px;
+  gap: 20px;
+  display: grid;
+}
+
+.section__title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--color-neon);
+}
+
+.card__step {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 400;
+  background-color: var(--color-neon);
+  color: var(--color-title-decor);
+}
+
+.card__description {
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 400;
+}
+
+.images {
+  display: grid;
+  
+}
+
+
