@@ -7,7 +7,7 @@
   background-size: auto 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #000028;/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--color-bg-page);/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 .header {
@@ -26,7 +26,7 @@
   justify-self: end;
   margin-block-start: 10px;
 margin-inline-end: 38px;
-color: var(--color-neon);
+color: var(--color-rec);
 text-transform: uppercase;
 font-size: 18px;
 line-height: 25px;
@@ -38,20 +38,20 @@ line-height: 25px;
   display: inline-block;
   width: 9px;
   height: 9px;
-  background-color: var(--color-neon);
+  background-color: var(--color-rec);
   border-radius: 50%;
  top:9px;
  margin-left: 100%;
  left: 9px;
- box-shadow:0 0 4px 2px rgb(var(--color-neon-rgba));
+ box-shadow:0 0 4px 2px rgb(var(--color-rgba));
 }
 
 .decorated-zone::before{
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--color-neon);
-  border-right: 1px solid var(--color-neon);
+  border-top: 1px solid var(--color-dec-zone);
+  border-right: 1px solid var(--color-dec-zone);
   position: absolute;
    justify-self: end;
    top: 10px;
@@ -63,8 +63,8 @@ line-height: 25px;
   content: "";
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--color-neon);
-  border-bottom: 1px solid var(--color-neon);
+  border-left: 1px solid var(--color-dec-zone);
+  border-bottom: 1px solid var(--color-dec-zone);
   position: absolute;
    bottom: 10px;
    left: 10px;
@@ -83,7 +83,7 @@ gap: 10px;
   background-color: transparent;
   width: 100%;
   border:1px solid transparent;
-  color:var(--color-neon);
+  color:var(--color-menu);
   font-size: 18px;
   line-height: 18px;
   text-transform: lowercase;
@@ -94,27 +94,27 @@ gap: 10px;
 
 
 .header__theme-menu-button:hover {
-  border-color: rgba(var(--color-neon-rgba), 0.4);
+  border-color: rgba(var(--color-rgba), 0.4);
   
 }
 
 .header__theme-menu-button:focus {
-  border-bottom: 1px solid var(--color-neon);
+  border-bottom: 1px solid var(--color-menu);
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--color-neon);
+  border-bottom: 1px solid var(--color-menu);
 }
 
 .header__theme-menu-button_active {
-border-color: var(--color-neon) !important;
+border-color: var(--color-menu) !important;
 }
 
 .title{
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 line-height: 83%;
-color: var(--color-pink);
-text-shadow: 4px 4px 0 var(--color-neon);
+color: var(--color-focus);
+text-shadow: 4px 4px 0 var(--color-bg-title);
 font-weight: 700;
 }
 
@@ -126,45 +126,75 @@ font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
-  background-color: var(--color-neon);
+  background-color: var(--color-bg-title);
   color: var(--color-title-decor);
 }
 
 .content {
   padding: 0px 10px 0px;
+  display: grid;
+  gap: 50px;
 }
 
-.content__section {
+.start__title {
   margin-top: 40px;
-  gap: 20px;
-  display: grid;
 }
 
 .section__title{
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--color-neon);
-}
-
-.card__step {
-  font-size: 18px;
-  line-height: 23.4px;
-  font-weight: 400;
-  background-color: var(--color-neon);
-  color: var(--color-title-decor);
-}
-
-.card__description {
-  padding-top: 10px;
-  font-size: 18px;
-  line-height: 23.4px;
-  font-weight: 400;
-}
-
-.images {
-  display: grid;
+  color: var(--color-title);
   
 }
 
+.concentration__title {
+margin-bottom: 20px;
+}
+
+.card {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card__step {
+  font-weight: 400;
+}
+
+.card__description {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 400;
+  color: var(--color-description);
+}
+
+.images {
+  grid-template-columns: 1fr;
+  max-width: 355px;
+  display: grid;
+  gap: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  display: grid;
+  position: relative;
+  margin-top: 40px;
+  min-height: 668px;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.title__footer{
+ font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+line-height: 83%;
+color: var(--color-focus);
+font-weight: 700;
+}
 

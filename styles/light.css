@@ -10,4 +10,23 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --page-bg-image: url("../images/cover-image-light.png");
+  --color-bg-page: #FFF1F7;
+  --color-menu:#353430;
+  --color-dec-zone:#353430;
+  --color-focus:#FFC2E6;
+  --color-rgba:53, 52, 48;
+  --color-bg-title:#FF8DCB;
+  --color-title-decor:#353430;
+  --color-title:#353430;
+  --color-description:#353430;
+}
+
+.theme-light {
+.rec {
+  display: none;
+}
+
+.rec::before {
+  display: none;
+}
 }

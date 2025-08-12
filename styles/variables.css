@@ -4,8 +4,14 @@
 */
 :root {
   --page-bg-image: url("../images/cover-image-dark.png");
-  --color-neon: #FF0070;
-  --color-neon-rgba:255, 0, 112;
-  --color-pink:#DB00FF;
+  --color-bg-page: #000028;
+  --color-menu:#FF0070;
+  --color-rec:#FF0070;
+  --color-dec-zone:#FF0070;
+  --color-focus:#DB00FF;
+  --color-rgba:255, 0, 112;
+  --color-bg-title:#FF0070;
   --color-title-decor:#000028;
+  --color-title:#FF0070;
+  --color-description:#F1B2CE;
 }
