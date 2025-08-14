@@ -6,7 +6,7 @@
   background-image: var(--page-bg-image);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100vh;
+  background-size: 100vw 100vh;
   background-attachment: fixed; /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -547,8 +547,6 @@ img {
 
   .footer {
     min-height: 768px;
-    margin-top: 60px;
-    padding: 20px 20px 20px;
   }
 
   .title__footer {
