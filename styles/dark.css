@@ -11,14 +11,13 @@
   */
   --page-bg-image: url("../images/cover-image-dark.png");
   --color-bg-page: #000028;
-  --color-menu:#FF0070;
-  --color-rec:#FF0070;
-  --color-dec-zone:#FF0070;
-  --color-focus:#DB00FF;
-  --color-rgba:255, 0, 112;
-  --color-bg-title:#FF0070;
-  --color-title-decor:#000028;
-  --color-title:#FF0070;
-  --color-description:#F1B2CE;
+  --color-menu: #ff0070;
+  --color-rec: #ff0070;
+  --color-dec-zone: #ff0070;
+  --color-focus: #db00ff;
+  --color-rgba: 255, 0, 112;
+  --color-bg-title: #ff0070;
+  --color-title-decor: #000028;
+  --color-title: #ff0070;
+  --color-description: #f1b2ce;
 }
-
