@@ -249,7 +249,6 @@ img {
 
   .header__theme-menu {
     grid-column: 2;
-    align-self: center;
     margin-top: -5px;
   }
 
@@ -378,6 +377,7 @@ img {
   }
 
   .footer {
+    min-height: 1024px;
     margin-top: 60px;
     padding: 20px 20px 20px;
   }
@@ -426,7 +426,6 @@ img {
   }
 
   .start__title {
-    grid-row: span 2;
     max-width: 315px;
   }
 
@@ -439,7 +438,6 @@ img {
 
   .attention__title {
     grid-column: 1/4;
-    grid-row: 1;
     max-width: 315px;
   }
 
@@ -458,5 +456,9 @@ img {
 
   .section__concentration .card:first-of-type {
     margin-top: -28px;
+  }
+
+  .footer {
+    min-height: 768px;
   }
 }
