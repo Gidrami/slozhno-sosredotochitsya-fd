@@ -210,7 +210,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  max-width: 355px;
 }
 
 img {
@@ -346,7 +345,6 @@ img {
     grid-template-rows: repeat(3, auto);
     grid-auto-flow: dense;
     gap: 20px;
-    max-width: 100vw;
   }
 
   .images img:first-child {

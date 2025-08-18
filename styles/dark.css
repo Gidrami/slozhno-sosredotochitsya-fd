@@ -21,3 +21,13 @@
   --color-title: #ff0070;
   --color-description: #f1b2ce;
 }
+
+.theme-dark {
+  .rec {
+    display:block;
+  }
+
+  .rec::before {
+    display: block;
+  }
+}
